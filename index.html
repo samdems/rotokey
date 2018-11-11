@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+    .cell {background-color: red;}
+    </style>
+  </head>
+  <body>
+    <h1 id='main'></h1>
+  </br>
+  </br>
+
+    <h1 id='gess'></h1>
+    <h2 id='setdom'></h2>
+    <h2 id='griddom'></h2>
+    <table width="500px" border="0">
+        <tbody id='ui'>
+        </tbody>
+    </table>
+    <table width="500px" border="0">
+                <tbody>
+                  <tr>
+                    <td width="50%"><table width="100%" id="pvowels">
+                        <tbody>
+                          <tr>
+                            <td colspan="4" class="hints" style="">single vowels</td>
+                          </tr>
+                          <tr class="amE">
+                            <td width="25%" align="center" bgcolor="#CCCCFF" id='Tɪ'>ɪ</td>
+                            <td width="25%" align="center" bgcolor="#CCCCFF" id='Ti'>i</td>
+                            <td width="25%" align="center" bgcolor="#CCCCFF" id='Tʊ'>ʊ</td>
+                            <td width="25%" align="center" bgcolor="#CCCCFF" id='Tu'>u</td>
+                          </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">sh<u>i</u>p</td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">sh<u>ee</u>p</td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">b<u>oo</u>k</td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">sh<u>oo</u>t</td>
+                          </tr>
+                          <tr class="amE">
+                            <td width="25%" align="center" bgcolor="#CCCCFF" id='Tɛ'>ɛ</td>
+                            <td width="25%" align="center" bgcolor="#CCCCFF" id='Tɜ'>ɜ</td>
+                            <td width="25%" align="center" bgcolor="#CCCCFF" id='Tə'>ə</td>
+                            <td width="25%" align="center" bgcolor="#CCCCFF" id='Tɔ'>ɔ</td>
+                          </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">l<u>e</u>ft</td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">h<u>er</u></td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">teach<u>er</u></td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">d<u>oor</u></td>
+                          </tr>
+                          <tr class="amE">
+                            <td align="center" bgcolor="#CCCCFF" id='Tæ'>æ</td>
+                            <td align="center" bgcolor="#CCCCFF" id='Tʌ'>ʌ</td>
+                            <td align="center" bgcolor="#CCCCFF" id='Tɒ'>ɒ</td>
+                            <td align="center" bgcolor="#CCCCFF" id='Tɑ'>ɑ</td>
+                          </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">h<u>a</u>t</td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style=""><u>u</u>p</td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style=""><u>o</u>n</td>
+                            <td class="hints" align="center" bgcolor="#ccccff" width="25%" style="">f<u>ar</u></td>
+                          </tr>
+                        </tbody>
+                    </table></td>
+                    <td width="50%"><table width="100%" border="0" id="pdipthongs" align="right">
+                        <tbody>
+                          <tr>
+                            <td colspan="4" class="hints" style="">diphthongs</td>
+                          </tr>
+                          <tr class="amE">
+                            <td width="33%" align="center" bgcolor="#FFFFBB" id='Teɪ'>eɪ</td>
+                            <td align="center" bgcolor="#FFFFBB" id='Tɔɪ'>ɔɪ</td>
+                            <td align="center" bgcolor="#FFFFBB" id='Taɪ'>aɪ</td>
+                            </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">w<u>ai</u>t</td>
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">c<u>oi</u>n</td>
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">l<u>i</u>ke</td>
+                            </tr>
+                          <tr class="amE">
+                            <td align="center" bgcolor="#FFFFBB" id='Teə'>eə</td>
+                            <td width="33%" align="center" bgcolor="#FFFFBB" id='Tɪə'>ɪə</td>
+                            <td align="center" bgcolor="#FFFFBB" id='Tʊə'>ʊə</td>
+                            </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">h<u>air</u></td>
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">h<u>ere</u></td>
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">t<u>ou</u>rist</td>
+                            </tr>
+                          <tr class="amE">
+                            <td align="center" bgcolor="#FFFFBB" id='Toʊ'>oʊ</td>
+                            <td align="center" bgcolor="#FFFFBB" id='Taʊ'>aʊ</td>
+                            <td align="center" bgcolor="#FFFFBB" id='T/'>/</td>
+                            </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">sh<u>ow</u></td>
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">m<u>ou</u>th</td>
+                            <td class="hints" align="center" bgcolor="#FFFFBB" width="25%" style="">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><table width="100%" id="pconsonants" border="0">
+                        <tbody>
+                          <tr>
+                            <td colspan="8" class="hints" style="">unvoiced consonants</td>
+                          </tr>
+                          <tr>
+                            <td width="12%" align="center" bgcolor="#F9CAF5" id='Tp'>p</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tf'>f</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tθ'>θ</td>
+                            <td width="12%" align="center" bgcolor="#F9CAF5" id='Tt'>t</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Ts'>s</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tʃ'>ʃ</td>
+                            <td width="12%" align="center" bgcolor="#F9CAF5" id='Tʧ'>ʧ</td>
+                            <td width="12%" align="center" bgcolor="#F9CAF5" id='Tk'>k</td>
+                          </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>p</u>ea</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>f</u>ree</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>th</u>ing</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>t</u>ree</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>s</u>ee</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>sh</u>eep</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>ch</u>eese</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>c</u>oin</td>
+                          </tr>
+                          <tr>
+                            <td colspan="8" align="center" class="hints" style="">voiced consonants</td>
+                            </tr>
+                          <tr>
+                            <td width="12%" align="center" bgcolor="#F9CAF5" id='Tb'>b</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tv'>v</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tð'>ð</td>
+                            <td width="12%" align="center" bgcolor="#F9CAF5" id='Td'>d</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tz'>z</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tʒ'>ʒ</td>
+                            <td width="12%" align="center" bgcolor="#F9CAF5" id='Tʤ'>ʤ</td>
+                            <td width="12%" align="center" bgcolor="#F9CAF5" id='Tg'>g</td>
+                          </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>b</u>oat</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>v</u>ideo</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>th</u>is</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>d</u>og</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>z</u>oo</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style="">televi<u>s</u>ion</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>j</u>oke</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>g</u>o</td>
+                          </tr>
+                          <tr>
+                            <td align="center" bgcolor="#F9CAF5" id='Tm'>m</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tn'>n</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tŋ'>ŋ</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Th'>h</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tw'>w</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tl'>l</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tr'>r</td>
+                            <td align="center" bgcolor="#F9CAF5" id='Tj'>j</td>
+                          </tr>
+                          <tr class="hints">
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>m</u>ouse</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>n</u>ow</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style="">thi<u>ng</u></td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>h</u>ope</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>w</u>e</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>l</u>ove</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>r</u>un</td>
+                            <td class="hints" align="center" bgcolor="#F9CAF5" width="12%" style=""><u>y</u>ou</td>
+                          </tr>
+                          <tr>
+                            <td align="center" bgcolor="#C6FFB3" id='T_'>_</td>
+                            <td align="center" bgcolor="#C6FFB3" id='T⌫'>⌫</td>
+                          </tr>
+                          <tr>
+              <td width="12%" align="center" bgcolor="#C6FFB3" id='T↗'>↗</td>
+              <td width="12%" align="center" bgcolor="#C6FFB3" id='T↘'>↘</td>
+              <td width="12%" align="center" bgcolor="#C6FFB3" id='T.'>.</td>
+              <td width="12%" align="center" bgcolor="#C6FFB3" id='Tˈ'>ˈ</td>
+              <td width="12%" align="center" bgcolor="#C6FFB3" id='Tˌ'>ˌ</td>
+              <td width="12%" align="center" bgcolor="#C6FFB3" id='T:'>:</td>
+              <td width="12%" align="center" bgcolor="#C6FFB3" id='Tʔ'>ʔ</td>
+              <td width="12%" align="center" bgcolor="#C6FFB3" id='Tˑ'>ˑ</td>
+
+                </tbody>
+              </table>
+    <script src='scripts2.js'></script>
+  </body>
+</html>
